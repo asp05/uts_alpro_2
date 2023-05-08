@@ -60,6 +60,7 @@ public class Soal2 {
                     break;
                 case 6:
                     System.out.println("Terima kasih sudah menggunakan program kami!");
+                    System.exit(0);
                     break;
                 default:
                     System.out.println("Pilihan tidak valid. Silakan coba lagi.");

@@ -51,12 +51,12 @@ public abstract class SegitigaAbstrak {
 
     abstract boolean isSegitiaSikuSiku();
 
-    public String getJenisSegigita() {
-        if (isSegitiaSamaKaki()) {
-            return "Segitiga adalah Segitiga Sama Kaki";
-        } else if (isSegitigaSamaSisi()) {
+    public String getJenisSegigita(){
+        if (isSegitigaSamaSisi()){
             return "Segitiga adalah Segitiga Sama Sisi";
-        } else if (isSegitiaSikuSiku()) {
+        } else if (isSegitiaSamaKaki()){
+            return "Segitiga adalah Segitiga Sama Kaki";
+        } else if (isSegitiaSikuSiku()){
             return "Segitiga adalah Segitiga Siku-siku";
         } else {
             return "Segitiga adalah Segitiga sembarang";

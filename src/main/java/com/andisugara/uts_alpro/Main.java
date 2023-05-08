@@ -4,6 +4,7 @@
 package com.andisugara.uts_alpro;
 
 import com.andisugara.uts_alpro.soal_2.Soal2;
+import com.andisugara.uts_alpro.soal_1.CekSegitigaForm;
 import java.util.Scanner;
 
 /**
@@ -20,8 +21,24 @@ public class Main {
                 + "Dosen\t\t: Bayu Rimba Pratama, S.T., M.Kom. \n"
                 + "============================================\n";
 
+        String textSoal = "1.Menentukan Jenis Segitiga menggunakan Java GUI\n"
+                + "2.Pos Sederhana\n";
+
         System.out.println(header);
-        Soal2.main();
+        System.out.println(textSoal);
+        Scanner pilihanSoal = new Scanner(System.in);
+        System.out.print("Masukkan Nomor Soal yang akan dijalankan: ");
+        int nomorSoal = pilihanSoal.nextInt();
+        switch (nomorSoal) {
+            case 1:
+                CekSegitigaForm.main();
+                break;
+            case 2:
+                Soal2.main();
+                break;
+            default:
+                System.out.println("Nomor Soal yang anda masukkan tidak ada");
+        }
 
     }
 }
