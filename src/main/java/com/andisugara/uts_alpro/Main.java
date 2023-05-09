@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        String header = "UJIAN AKHIR SEMESTER\n" + "Nama\t\t: Andi Sugara Putra\n"
+        String header = "UJIAN TENGAH SEMESTER\n" + "Nama\t\t: Andi Sugara Putra\n"
                 + "NIM\t\t: 22552011093\n"
                 + "Kelas\t\t: Tif RM 22 B - OFFLINE\n"
                 + "Mata Kuliah\t: Algoritma dan Pemograman II\n"
